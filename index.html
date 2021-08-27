@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+</head>
+
+<body class="bg-info">
+    <main>
+        <header>
+            <nav class="navbar navbar-expand-lg navbar-light bg-white">
+                <div class="container">
+                    <a class="navbar-brand fs-4 text-danger" href="index.html">Hotel Radhuni</a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="#">Home</a>
+                            </li>
+
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">About</a>
+                            </li>
+
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Recipes</a>
+                            </li>
+
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Blog</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </header>
+
+        <section class="container">
+            <h1 class="text-center mt-4 text-white">Well come to the Hotel Radhuni</h1>
+            <div class="input-group mb-3 w-50 mx-auto">
+                <input id="input-text" type="text" class="form-control " placeholder="Enter Your Favourite Food"
+                    aria-label="Recipient's username" aria-describedby="button-addon2">
+                <button onclick="getInputValue()" class="btn btn-outline-success" type="button"
+                    id="button-addon2">Search</button>
+            </div>
+        </section>
+        <section class="container">
+            <div id="meal-details" class="mx-auto w-25 mb-3 "></div>
+            <p id="error" class="text-danger fs-4 text-center "> Please Enter a Food Name</p>
+            <div id="spiner-show" class="spinner-border text-warning mx-auto" role="status">
+                <span class="visually-hidden">Loading...</span>
+            </div>
+        </section>
+        <!-- meal item show -->
+        <section class="container">
+            <div id="meal-container" class="row row-cols-1 row-cols-md-3 g-4">
+
+
+
+            </div>
+        </section>
+
+    </main>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj"
+        crossorigin="anonymous"></script>
+    <script src="js/hotel.js"></script>
+</body>
+
+</html>
