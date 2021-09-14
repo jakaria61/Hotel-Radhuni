@@ -1,3 +1,15 @@
+
+// for enter button 
+const inputFiled = document.getElementById('input-text');
+const enterButton = document.getElementById('button-addon2');
+
+inputFiled.addEventListener('keypress', function (event) {
+    if (event.key == 'Enter') {
+        enterButton.click();
+    }
+});
+
+
 //error hide
 const errorContainer = document.getElementById('error');
 errorContainer.style.display = 'none'
